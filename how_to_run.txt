@@ -1,0 +1,10 @@
+scrapy crawl ebay_result_count -o ./output/outputfile.csv -a search='search keywords'
+
+where
+-o expects name and path to output csv file
+-a search expects search keywords (in case of multiple keywords, should be saparated by comma)
+
+i.e
+
+scrapy crawl ebay_result_count -o ./output/nike_shoes_counts.csv -a search='nike_shoes'
+scrapy crawl ebay_result_count -o ./output/men_sneakers_counts.csv -a search='nike_men_sneakers,adidas_men_sneakers'
